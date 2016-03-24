@@ -1,0 +1,6 @@
+ENTRY "workspace" URL "/home/pvtr/workspace"
+ENTRY "Загрузки" URL "/home/pvtr/Загрузки"
+ENTRY "uva-stend" URL "/sftp://pvtr@10.10.11.238/home/pvtr"
+ENTRY "Media" URL "/media/pvtr"
+ENTRY "bupos-stend" URL "/sftp://pvtr@10.10.10.211/"
+ENTRY "var" URL "/home/pvtr/temp/various"

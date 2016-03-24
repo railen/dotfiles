@@ -1,1 +1,0 @@
-/home/pvtr/.config/mc
