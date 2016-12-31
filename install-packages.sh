@@ -12,7 +12,7 @@ apt install --no-install-recommends \
     python-gtk2 python-cairo python-gobject-2 \
     xscreensaver xscreensaver-gl xscreensaver-gl-extra xscreensaver-screensaver-bsod xscreensaver-screensaver-dizzy xscreensaver-screensaver-webcollage \
     vim-runtime vim-common vim-gui-common vim-tiny curl exuberant-ctags \
-    ttf-mscorefonts-installer \
+    ttf-mscorefonts-installer ttf-bitstream-vera ttf-dejavu ttf-liberation \
     polipo pdnsd \
     encfs \
     flashplugin-installer \
