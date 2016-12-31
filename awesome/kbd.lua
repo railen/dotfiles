@@ -1,3 +1,6 @@
+local awful = require("awful")
+local wibox = require("wibox")
+
 -- {{{ Variable definitions
 kbd_dbus_sw_cmd = "qdbus ru.gentoo.KbddService /ru/gentoo/KbddService  ru.gentoo.kbdd.set_layout "
 -- kbd_dbus_sw_cmd = "dbus-send --dest=ru.gentoo.KbddService /ru/gentoo/KbddService ru.gentoo.kbdd.set_layout uint32:"
@@ -18,15 +21,16 @@ kbdmenu =awful.menu({ items = {  { "English", kbd_dbus_sw_cmd .. "0",  kbd_img_p
 })
 
 -- Create simple text widget
-kbdwidget = widget({type = "textbox", name = "kbdwidget"})
+-- kbdwidget = widget({type = "textbox", name = "kbdwidget"})
+kbdwidget = wibox.widget.textbox()
 -- kbdwidget.border_width = 1
 -- kbdwidget.border_color = beautiful.fg_normal
 kbdwidget.align="right"
 kbdwidget.text = "<b>Eng</b>"
-kbdwidget.bg_image = image (kbd_img_path .. "us.png")
+kbdwidget.bg_image = kbd_img_path .. "us.png"
 kbdwidget.bg_align = "left"
 kbdwidget.bg_resize = true
-awful.widget.layout.margins[kbdwidget] = { left = 0, right = 25 }
+-- awful.widget.layout.margins[kbdwidget] = { left = 0, right = 25 }
 kbdwidget:buttons(awful.util.table.join(
 	awful.button({ }, 1, function() os.execute(kbd_dbus_prev_cmd) end),
 	awful.button({ }, 2, function() os.execute(kbd_dbus_next_cmd) end),
@@ -37,7 +41,7 @@ kbdwidget:buttons(awful.util.table.join(
 -- {{{ Signals
 dbus.request_name("session", "ru.gentoo.kbdd")
 dbus.add_match("session", "interface='ru.gentoo.kbdd',member='layoutChanged'")
-dbus.add_signal("ru.gentoo.kbdd", function(...)
+dbus.connect_signal("ru.gentoo.kbdd", function(...)
 	local data = {...}
 	local layout = data[2]
 	lts = {[0] = "Eng", [1] = "Рус", [2] = "Heb", [3] = "Deu"}

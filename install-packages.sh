@@ -1,9 +1,8 @@
 #/bin/sh
-apt-get install --no-install-recommends \
+apt install --no-install-recommends \
     mc awesome awesome-extra feh \
-    xorg xserver-xorg-video-ati xserver-xorg-input-mouse \
-    firefox thunderbird \
-    firefox-locale-ru thunderbird-locale-ru \
+    xorg \
+    firefox firefox-locale-ru mutt tmux\
     rxvt-unicode \
     vim vim-gtk \
     xfonts-terminus \
@@ -19,11 +18,12 @@ apt-get install --no-install-recommends \
     flashplugin-installer \
     pulseaudio alsa-base alsa-utils pulseaudio-module-x11 \
     kbdd htop fonts-liberation \
-    libqt4-dev qtcreator \
+    qtcreator \
     gcc make g++ \
     shorewall gdb \
     thunar thunar-archive-plugin thunar-volman notification-daemon \
-    apache2 mysql-client mysql-server mysql-workbench ttf-bitstream-vera \
-    keepass2 xdg-utils remmina remmina-plugin-rdp \
+    apache2 mysql-client mysql-workbench ttf-bitstream-vera \
+    keepassx xdg-utils remmina remmina-plugin-rdp \
     eric \
-    gtk2-engines
+    gtk2-engines gnome-icon-theme-full policykit-1 gvfs
+

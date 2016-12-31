@@ -1,7 +1,7 @@
 -- Useful reusable functions
 
 local tonumber = tonumber
-local awful = awful
+local awful = require("awful")
 local naughty = naughty
 local timer = timer
 local pairs = pairs
