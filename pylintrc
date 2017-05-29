@@ -5,7 +5,7 @@
 
 # Python code to execute, usually for sys.path manipulation such as
 # pygtk.require().
-init-hook='import sys; sys.path.append("/home/pvtr/temp/various/py-dev/samson")'
+init-hook='import sys; sys.path.append("/home/pvtr/py-dev/samson")'
 
 # Profiled execution.
 profile=no
