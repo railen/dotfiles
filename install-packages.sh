@@ -1,7 +1,8 @@
 #/bin/sh
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-APT_FLAGS=-sy --no-insall-recommends
-echo apt install $APT_FLAGS $(grep -vE "^\s*#" $DIR/package-list  | tr "\n" " ")
+echo Current dir is $DIR
+APT_FLAGS=-y --no-install-recommends
+apt install $APT_FLAGS $(grep -vE "^\s*#" $DIR/package-list  | tr "\n" " ")
 
 # Heroku repo and key
 add-apt-repository "deb https://cli-assets.heroku.com/branches/stable/apt ./"
