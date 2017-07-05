@@ -41,8 +41,9 @@ python-gtk2
 qtcreator
 remmina 
 remmina-plugin-rdp
-rxvt-unicode
+rxvt-unicode-256color
 shorewall 
+software-properties-common
 subversion
 thunar 
 thunar-archive-plugin 

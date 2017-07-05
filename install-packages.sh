@@ -14,6 +14,9 @@ apt-key adv --keyserver pgp.mit.edu --recv-keys 5044912E
 # Add Dropbox’s repository
 add-apt-repository "deb http://linux.dropbox.com/ubuntu $(lsb_release -sc) main"
 
+# Fresh mutt etc.
+add-apt-repository ppa:jonathonf/backports
+
 # Update and install dropbox and heroku
 apt update
 apt install $APT_FLAGS nautilus-dropbox heroku

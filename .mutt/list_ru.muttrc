@@ -1,0 +1,21 @@
+# vim: set ft=muttrc: 
+## Receive options
+set imap_user = $my_user_listru 
+set imap_pass = $my_pw_listru
+set folder = imaps://imap.mail.ru/
+set spoolfile =+INBOX
+set postponed = +Drafts
+set record = +Sent
+mailboxes = +INBOX
+
+## Send options
+set smtp_url=smtps://$imap_user:$imap_pass@smtp.mail.ru
+set realname = 'Alexandr V. Lebedev' 
+set from = $my_user_listru
+set hostname = "list.ru"
+set signature = "~/.mutt/signature"
+# Connection options
+set ssl_starttls = yes
+
+## Hook
+account-hook $folder 'set imap_user="$my_user_listru" imap_pass="$my_pw_listru"'
