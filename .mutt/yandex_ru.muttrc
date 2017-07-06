@@ -1,0 +1,22 @@
+## Receive options
+set imap_user = $my_user_yandexru 
+set imap_pass = $my_pw_yandexru
+set folder = imaps://$imap_user@imap.yandex.ru/
+set spoolfile =+INBOX
+set postponed = +Drafts
+set record = +Sent
+mailboxes 'yandex:' +INBOX
+
+## Send options
+set smtp_url=smtps://$imap_user:$imap_pass@smtp.yandex.ru
+set realname = 'Alexandr V. Lebedev' 
+set from = $my_user_yandexru
+set hostname = "yandex.ru"
+set signature = "~/.mutt/signature"
+# Connection options
+set ssl_starttls = yes
+
+## Hook
+account-hook $folder 'set imap_user="$my_user_yandexru" imap_pass="$my_pw_yandexru"'
+
+# vim: set ft=muttrc: 

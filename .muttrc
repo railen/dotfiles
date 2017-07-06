@@ -9,10 +9,14 @@ bind index,pager \CN sidebar-next       # Ctrl-Shift-N - Next Mailbox
 bind index,pager \CO sidebar-open       # Ctrl-Shift-O - Open Highlighted Mailbox
 
 set sidebar_visible
-set sidebar_format = "%B%?F? [%F]?%* %?N?%N/?%S"
+set sidebar_format = "%B%?F? [%F]?%* %?N?%N/?%?S?%S&?"
+set sidebar_short_path
 set mail_check_stats
 
-set send_charset = "utf-8"
+# Remove "GPGME: CMS protocol not available" message
+unset crypt_use_gpgme
+
+set send_charset = 'utf-8'
 set mailcap_path = ~/.mutt/mailcap
 auto_view text/html
 
@@ -23,7 +27,7 @@ set header_cache = ~/.cache/mutt
 # Store messages locally to speed things up, like searching message bodies.
 # Can be the same folder as header_cache.
 # This will cost important disk usage according to your e-mail amount.
-set message_cachedir = "~/.cache/mutt"
+set message_cachedir = '~/.cache/mutt'
 
 # Allow Mutt to open new imap connection automatically.
 unset imap_passive
@@ -37,14 +41,6 @@ set mail_check = 120
 set sort_aux = last-date-received                           
 #set sort = reverse-threads
 
-#source ~/.mutt/mutt-colors-solarized-dark-256.muttrc
-
-## Gmail Account
-source "~/.mutt/gmail.muttrc"
-folder-hook $folder 'source ~/.mutt/gmail.muttrc'
-
-## List.ru Account
-source "~/.mutt/list_ru.muttrc"
-folder-hook $folder 'source ~/.mutt/list_ru.muttrc'
+source ~/.mutt/accounts.muttrc
 
 push <show-version>  # Shows mutt version at startup

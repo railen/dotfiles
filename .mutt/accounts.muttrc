@@ -1,0 +1,22 @@
+# yandex.ru Account
+source "~/.mutt/yandex_ru.muttrc"
+folder-hook $folder 'source ~/.mutt/yandex_ru.muttrc'
+
+# bk.ru Account
+source "~/.mutt/bk_ru.muttrc"
+folder-hook $folder 'source ~/.mutt/bk_ru.muttrc'
+
+# list.ru Account
+source "~/.mutt/list_ru.muttrc"
+folder-hook $folder 'source ~/.mutt/list_ru.muttrc'
+
+### Gmail Account
+source "~/.mutt/gmail.muttrc"
+folder-hook $folder 'source ~/.mutt/gmail.muttrc'
+
+## Shortcuts
+macro index,pager <f2> '<sync-mailbox><enter-command>source ~/.mutt/gmail.muttrc<enter><change-folder>!<enter>'
+macro index,pager <f3> '<sync-mailbox><enter-command>source ~/.mutt/list_ru.muttrc<enter><change-folder>!<enter>'
+macro index,pager <f4> '<sync-mailbox><enter-command>source ~/.mutt/bk_ru.muttrc<enter><change-folder>!<enter>'
+macro index,pager <f5> '<sync-mailbox><enter-command>source ~/.mutt/yandex_ru.muttrc<enter><change-folder>!<enter>'
+### vim: set ft=muttrc:
