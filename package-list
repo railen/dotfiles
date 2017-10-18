@@ -4,8 +4,11 @@ apache2
 awesome 
 awesome-extra 
 curl 
+doxygen
+elinks
 encfs
 eric
+evince
 exuberant-ctags
 feh
 firefox 
@@ -38,6 +41,8 @@ pulseaudio-module-x11
 python-cairo 
 python-gobject-2
 python-gtk2 
+python-qt4
+python-qt4-sql
 qtcreator
 remmina 
 remmina-plugin-rdp

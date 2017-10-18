@@ -41,6 +41,13 @@ set mail_check = 120
 set sort_aux = last-date-received                           
 #set sort = reverse-threads
 
+# New mail notification
+set new_mail_command = "notify-send --icon='/usr/share/pixmaps/mutt.xpm' 'New Email in %f' '%n new messages, %u unread.' &"
+
+# Accounts setup
 source ~/.mutt/accounts.muttrc
+
+# Color scheme
+source ~/.mutt/mutt-colors-solarized-dark-256.muttrc
 
 push <show-version>  # Shows mutt version at startup
