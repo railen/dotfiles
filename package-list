@@ -41,6 +41,7 @@ mutt-patched
 mysql-client 
 mysql-workbench 
 nautilus-dropbox
+nmap
 notification-daemon
 pdnsd
 policykit-1 
