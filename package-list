@@ -6,24 +6,24 @@ awesome-extra
 curl 
 doxygen
 elinks
-encfs
+# encfs
 eric
 evince
 exuberant-ctags
 feh
 firefox-esr
 firefox-esr-l10n-ru 
-flashplugin-installer
+# flashplugin-installer
 fonts-liberation
 fonts-powerline
 g++
 gcc 
 gdb
 git 
-gnome-icon-theme-full 
+# gnome-icon-theme-full 
 gtk2-engines 
 gvfs
-heroku
+# heroku
 htop 
 kbdd
 keepassx
@@ -37,17 +37,17 @@ make
 mc 
 mercurial 
 multitail
-mutt-patched
+mutt
 mysql-client 
 mysql-workbench 
 nautilus-dropbox
 nmap
 notification-daemon
-pdnsd
+# dnsd
 policykit-1 
 polipo 
 pulseaudio 
-pulseaudio-module-x11
+# pulseaudio-module-x11
 pylint
 python-cairo 
 python-gobject-2
@@ -56,6 +56,7 @@ python-qt4
 python-qt4-sql
 python-requests
 python-serial
+python3-distutils
 pyqt4-dev-tools
 qtcreator
 remmina 
@@ -71,7 +72,7 @@ tmux
 ttf-bitstream-vera
 ttf-bitstream-vera 
 ttf-dejavu 
-ttf-liberation
+# ttf-liberation
 ttf-mscorefonts-installer 
 vim 
 vim-common 

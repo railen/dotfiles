@@ -1,7 +1,7 @@
-#/bin/sh
+#!/bin/bash
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 echo Current dir is $DIR
-APT_FLAGS=-y --no-install-recommends
+APT_FLAGS="-y --no-install-recommends"
 
 # Heroku repo and key
 add-apt-repository "deb https://cli-assets.heroku.com/branches/stable/apt ./"
