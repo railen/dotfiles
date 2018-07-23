@@ -8,7 +8,8 @@ ln -s ~/.dotfiles/.mutt ~/.mutt
 ln -fs ~/.dotfiles/mc ~/.config/mc 
 ln -s ~/.dotfiles/.Xdefaults ~/.Xdefaults
 
-/usr/bin/git clone https://github.com/farazdagi/vim-go-ide.git ~/.vim
+/usr/bin/git clone https://github.com/farazdagi/vim-go-ide.git ~/.vim_go_runtime
+ln -s ~/.vim_go_runtime ~/.vim
 /usr/bin/git clone https://github.com/jceb/vim-orgmode.git ~/.vim/bundle/pristine/vim-orgmode
 /usr/bin/git clone https://github.com/joonty/vdebug.git  ~/.vim/bundle/pristine/vdebug
 /usr/bin/git clone https://github.com/vim-scripts/DoxygenToolkit.vim.git ~/.vim/bundle/pristine/DoxygenToolkit.vim
