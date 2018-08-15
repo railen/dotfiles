@@ -9,3 +9,7 @@ let g:vdebug_options = {'break_on_open': 0}
 let g:vdebug_options = {'server': '127.0.0.1'}
 let g:syntastic_cpp_compiler_options = '-std=c++11'
 let g:clang_complete_macros = 1
+let g:DoxygenToolkit_authorName = "Alexandr V. Lebedev"
+set encoding=utf-8
+set fileencoding=utf-8
+nmap <leader>d :Dox<cr>

@@ -17,6 +17,8 @@ ln -s ~/.vim_go_runtime ~/.vim
 /usr/bin/git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ln -s ~/.fzf ~/.vim/bundle/pristine/fzf
 /usr/bin/git clone https://github.com/junegunn/fzf.vim.git ~/.vim/bundle/pristine/fzf.vim
+/usr/bin/git clone https://github.com/Shougo/neosnippet-snippets.git  ~/.vim/bundle/pristine/neosnippet-snippets
+/usr/bin/git clone https://github.com/vim-airline/vim-airline ~/.vim/bundle/pristine/vim-airline
 ~/.fzf/install
 ln -s ~/.dotfiles/custom_config.vim ~/.vim
 ~/.vim/bin/update_plugins
