@@ -11,9 +11,10 @@ eric
 evince
 exuberant-ctags
 feh
-firefox-esr
-firefox-esr-l10n-ru 
+firefox
+firefox-locale-ru
 # flashplugin-installer
+fonts-font-awesome
 fonts-liberation
 fonts-powerline
 g++
@@ -22,12 +23,14 @@ gdb
 git 
 gnupg2
 # gnome-icon-theme-full 
+gnome-keyring
 gtk2-engines 
 gvfs
 # heroku
 htop 
 kbdd
-keepassx
+keepassxc
+libqt4-sql-mysql
 libreoffice-writer
 libreoffice-calc
 libreoffice-draw
@@ -42,9 +45,11 @@ mutt
 mysql-client 
 mysql-workbench 
 nautilus-dropbox
+nextcloud-client
 nmap
 notification-daemon
 # dnsd
+p7zip
 policykit-1 
 polipo 
 pulseaudio 
@@ -62,6 +67,7 @@ python3-distutils
 pyqt4-dev-tools
 qalc
 qtcreator
+qt4-designer
 remmina 
 remmina-plugin-rdp
 rxvt-unicode-256color

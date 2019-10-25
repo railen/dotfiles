@@ -55,6 +55,8 @@ URxvt.tabbed.tabbar-bg: 8
 URxvt.tabbed.tab-fg:    8
 URxvt.tabbed.tab-bg:    14
 URxvt.searchable-scrollback: CM-s
+URxvt.iso14755: false
+URxvt.iso14755_52: false
 ! URxvt.geometry:        125x34+10+10
 
 xscreensaver.splash: false

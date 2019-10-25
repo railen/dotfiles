@@ -23,4 +23,4 @@ ln -s ~/.fzf ~/.vim/bundle/pristine/fzf
 ln -s ~/.dotfiles/custom_config.vim ~/.vim
 ~/.vim/bin/update_plugins
 ~/.vim/bin/install
-ln -s ~/.vimrc.go ~/vimrc
+ln -s ~/.vimrc.go ~/.vimrc
